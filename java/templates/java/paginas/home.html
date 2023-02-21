@@ -1,0 +1,34 @@
+{% extends 'global/paginas/base.html' %}
+
+{% block titulo %}Java{% endblock titulo %}
+
+{% block linguagem %}
+    {% include 'java/parciais/linguagem.html' %}
+{% endblock linguagem %}
+
+{% block menu %}    
+    {% include 'java/parciais/menu.html' %}
+{% endblock menu %}
+
+{% block tag_h1 %}Java{% endblock tag_h1 %}
+
+{% block principal %}
+<p>Java é uma das linguagens mais populares entre os
+ programadores e tem vindo a ganhar cada vez mais força ao longo dos últimos 20 anos.
+  Por essa razão, existem vários motivos pelos quais um jovem programador deverá 
+  adquirir conhecimentos de forma a aprender a programar em Java.</p>
+
+  <p>Esta é uma linguagem de programação desenvolvida nos anos 90 por uma equipa 
+de programadores liderada por James Gosling, na empresa Sun Microsystems. 
+Ao contrário das linguagens convencionais, que são compiladas para código nativo, 
+a linguagem Java é compilada para um bytecode que é executado por uma máquina virtual.</p>
+
+<p>Hoje em dia Java é a base de praticamente todos os tipos de aplicações em rede e 
+é o padrão para desenvolvimento e implementação de aplicações móveis, jogos, 
+conteúdo on-line e software corporativo. Com mais de 9 milhões de programadores 
+em todo o mundo, a linguagem Java permite desenvolver e implementar aplicações e 
+serviços de maneira eficiente. Com ferramentas abrangentes, um ecossistema 
+sólido e um desempenho excelente, Java oferece a portabilidade de aplicações mesmo 
+entre ambientes computacionais bastante diferentes.</p>
+<p><i>Fonte: https://tek.sapo.pt/opiniao/artigos/opiniao-10-motivos-para-aprender-a-programar-java-e-porque-e-uma-das-melhores-linguagens</i></p>
+{% endblock principal %}

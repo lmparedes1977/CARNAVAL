@@ -1,0 +1,26 @@
+{% extends 'global/paginas/base.html' %}
+
+{% block titulo %}JS - Exemplos{% endblock titulo %}
+
+{% block linguagem %}    
+    {% include 'jscript/parciais/linguagem.html' %}
+{% endblock linguagem %}
+
+{% block menu %}
+    {% include 'jscript/parciais/menu.html' %}
+{% endblock menu %}
+
+{% block tag_h1 %}
+    Exemplos de Aplicações construídas com Javascript
+{% endblock tag_h1 %}
+
+{% block principal %}
+    {% if lista %}
+        {% for aplicacao in lista %}
+        <a href="exemplo/{{aplicacao.titulo}}"><h3>{{aplicacao.titulo}}</h3></a>
+        <p> {{aplicacao.desenvolvedor.nome}} {{aplicacao.desenvolvedor.sobrenome}} </p>        
+        {% endfor %}
+    {% else %}
+        <p>Não há exemplos de aplicações nesta linguagem</p>  
+    {% endif %}
+{% endblock principal %}

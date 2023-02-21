@@ -1,0 +1,24 @@
+{% extends 'global/paginas/base.html' %}
+
+{% block titulo %}Python-Exemplos{% endblock titulo %}
+
+{% block linguagem %}    
+    {% include 'python/parciais/linguagem.html' %}
+{% endblock linguagem %}
+
+{% block menu %}
+    {% include 'python/parciais/menu.html' %}
+{% endblock menu %}
+
+{% block tag_h1 %}Exemplos de aplicações construídas com Python{% endblock tag_h1 %}
+
+{% block principal %}
+    {% if lista %}
+        {% for aplicacao in lista %}
+        <a href="exemplo/{{aplicacao.titulo}}"><h3>{{aplicacao.titulo}}</h3></a>
+        <p> {{aplicacao.desenvolvedor.nome}} {{aplicacao.desenvolvedor.sobrenome}} </p>        
+        {% endfor %}
+    {% else %}
+        <p>Não há exemplos de aplicações nesta linguagem</p>  
+    {% endif %}
+{% endblock principal %}

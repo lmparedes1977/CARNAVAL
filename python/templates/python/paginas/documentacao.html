@@ -1,0 +1,17 @@
+{% extends 'global/paginas/base.html' %}
+
+{% block titulo %}Python - Documentação{% endblock titulo %}
+
+{% block linguagem %}    
+    {% include 'python/parciais/linguagem.html' %}
+{% endblock linguagem %}
+
+{% block menu %}
+    {% include 'python/parciais/menu.html' %}
+{% endblock menu %}
+
+{% block tag_h1 %}Documentação{% endblock tag_h1 %}
+
+{% block principal %}
+    <a target="_blank" href="https://docs.python.org/pt-br/3.11/tutorial/">Documentação oficial da linguagem</a>
+{% endblock principal %}

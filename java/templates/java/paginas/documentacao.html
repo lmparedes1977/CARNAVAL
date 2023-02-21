@@ -1,0 +1,19 @@
+{% extends 'global/paginas/base.html' %}
+
+{% block titulo %}Java-Documentação{% endblock titulo %}
+
+{% block linguagem %}
+    {% include 'java/parciais/linguagem.html' %}
+{% endblock linguagem %}
+
+{% block menu %}    
+    {% include 'java/parciais/menu.html' %}
+{% endblock menu %}
+
+{% block tag_h1 %}
+    <h1>DOCUMENTAÇÃO</h1>
+{% endblock tag_h1 %}
+
+{% block principal %}
+    <a target="_blank" href="https://docs.oracle.com/en/java/">Documentação oficial da linguagem</a>
+{% endblock principal %}

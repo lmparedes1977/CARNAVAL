@@ -1,0 +1,22 @@
+{% extends 'global/paginas/base.html' %}
+
+{% block titulo %}Contato{% endblock titulo %}
+
+{% block linguagem %}
+    {% include 'home/parciais/link-home.html' %}
+{% endblock linguagem %}
+
+{% block menu %}    
+    {% include 'home/parciais/menu.html' %}
+{% endblock menu %}
+
+{% block tag_h1 %}
+    <h2>Contato</h2>
+{% endblock tag_h1 %}
+
+{% block principal %}
+    <div>
+        <textarea class="textarea" name="" id="" cols="50" rows="10"></textarea><br>
+        <button type="button" class="btn btn-secondary">ENVIAR</button>
+    </div>
+{% endblock principal %}

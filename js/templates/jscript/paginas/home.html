@@ -1,0 +1,43 @@
+{% extends 'global/paginas/base.html' %}
+
+{% block titulo %}JS{% endblock titulo %}
+
+{% block linguagem %}    
+    {% include 'jscript/parciais/linguagem.html' %}
+{% endblock linguagem %}
+
+{% block menu %}
+    {% include 'jscript/parciais/menu.html' %}
+{% endblock menu %}
+
+{% block tag_h1 %}Javascript{% endblock tag_h1 %}
+
+{% block principal %}
+<p>O JavaScript é uma linguagem que está praticamente em todos os lugares por causa de 
+    sua flexibilidade e adaptabilidade à diversos ambientes. Podemos utilizar o 
+    JavaScript no front-end através de frameworks e bibliotecas como o Angular e o 
+    React; no back-end, através do Node.js e do Deno; no desenvolvimento mobile,
+     através de frameworks como Ionic e React Native; e até mesmo para o desenvolvimento 
+     de games. Esse já é um bom motivo para dedicar um tempo de estudo a ele.</p>
+
+ <h3>Multiplavaforma</h3>
+ <p>
+    Uma das características mais interessantes do JavaScript é a sua versatilidade, 
+    o que o torna uma linguagem que pode ser executada em uma infinidade de ambientes, 
+    passando pelo front-end e indo até o desenvolvimento de jogos e aplicações para IoT.</p> 
+<p>
+    Isso favorece a criação de uma solução mais homogênea quando o JavaScript é utilizado, 
+    reduzindo o esforço técnico e até mesmo a escalabilidade da solução: com uma única 
+    linguagem-base, você pode criar um website, uma aplicação front-end SPA que se comunica 
+    com um back-end baseado em Node ou Deno, um aplicativo mobile de apoio que utilize Ionic 
+    ou React Native e, se necessário, até mesmo um módulo de automação com interface 
+    com sensores e máquinas utilizando Arduino. E tudo isso centralizado em uma única 
+    base de código apoiada somente no JavaScript.
+</p>
+<p>
+    Certamente, o esforço de desenvolvimento e a disseminação do conhecimento do código 
+    na equipe são facilitados quando toda a base de código se fundamenta em uma única 
+    linguagem.
+</p>
+<p><i>Fonte: https://www.treinaweb.com.br/blog/5-bons-motivos-para-estudar-javascript</i></p>    
+{% endblock principal %}

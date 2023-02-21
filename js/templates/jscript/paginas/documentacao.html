@@ -1,0 +1,18 @@
+{% extends 'global/paginas/base.html' %}
+
+{% block titulo %}JS - Documentação{% endblock titulo %}
+
+{% block linguagem %}    
+    {% include 'jscript/parciais/linguagem.html' %}
+{% endblock linguagem %}
+
+{% block menu %}
+    {% include 'jscript/parciais/menu.html' %}
+{% endblock menu %}
+
+{% block tag_h1 %}Documentação{% endblock tag_h1 %}
+
+{% block principal %}
+    <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">
+        Documentação oficial da linguagem</a>
+{% endblock principal %}
