@@ -2,7 +2,7 @@
 
 {% block titulo %}JS-Exemplo{% endblock titulo %}
 
-{% block linguagem %}    
+{% block linguagem %}
     {% include 'jscript/parciais/linguagem.html' %}
 {% endblock linguagem %}
 
@@ -11,13 +11,13 @@
 {% endblock menu %}
 
 {% block tag_h1 %}
-    {{id.titulo}}
+    {{dado.nome}}
 {% endblock tag_h1 %}
 
-{% block principal %}    
-    <img src="{{id.foto.url}}" alt="" style="margin-bottom: 10px">
-    <p><strong>Lançado em:</strong> {{id.data_estreia}}</p>
-    <p><strong>Categoria:</strong> {{id.categoria.name}}</p>
-    <p><strong>Descrição:</strong> {{id.descricao}}</p>
-    <p><strong>Número de usuários:</strong> {{id.nr_usuarios}}</p>
+{% block principal %}
+    <img src="{{dado.foto.url}}" alt="" style="margin-bottom: 10px">
+    <p><strong>Lançado em:</strong> {{dado.ano_lancamento}}</p>
+    <p><strong>Categoria:</strong> {{dado.categoria}}</p>
+    <p><strong>Descrição:</strong> {{dado.descricao}}</p>
+    <p><strong>Número de usuários:</strong> {{dado.nr_usuarios}}</p>
 {% endblock principal %}

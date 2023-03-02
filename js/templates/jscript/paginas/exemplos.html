@@ -2,7 +2,7 @@
 
 {% block titulo %}JS - Exemplos{% endblock titulo %}
 
-{% block linguagem %}    
+{% block linguagem %}
     {% include 'jscript/parciais/linguagem.html' %}
 {% endblock linguagem %}
 
@@ -17,10 +17,10 @@
 {% block principal %}
     {% if lista %}
         {% for aplicacao in lista %}
-        <a href="exemplo/{{aplicacao.titulo}}"><h3>{{aplicacao.titulo}}</h3></a>
-        <p> {{aplicacao.desenvolvedor.nome}} {{aplicacao.desenvolvedor.sobrenome}} </p>        
+        <a href="exemplo/{{aplicacao.id}}"><h3>{{aplicacao.nome}}</h3></a>
+        <p> {{aplicacao.categoria}}</p>
         {% endfor %}
     {% else %}
-        <p>Não há exemplos de aplicações nesta linguagem</p>  
+        <p>Não há exemplos de aplicações nesta linguagem</p>
     {% endif %}
 {% endblock principal %}
